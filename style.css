@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Roboto:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: block;
+}
+
+.logo {
+    float: left;
+    line-height: 60px;
+    margin: 0 40px 0 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 0;
+    height: 60px;
+    width: 100%;
+}
+
+.nav ul {
+    line-height: 60px;
+    margin-right: 40px;
+    list-style: none;
+    float: right;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: black;
+    padding: 0 15px;
+}
+
+.nav ul li:hover {
+    border-radius: 10px;
+    background: rgba(114, 139, 214, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav ul li i {
+    margin-right: 10px;
+}
+
+label #btn,
+label #close {
+    color: black;
+    font-size: 25px;
+    float: right;
+    margin-right: 100px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.action {
+    visibility: hidden;
+}
+
+.main-content {
+    margin: 40px 40px 0 100px;
+}
+
+.main-content h1 {
+    font-size: 50px;
+}
+
+.main-content h3 {
+    font-size: 30px;
+}
+
+.main-content h4,
+.main-content p {
+    font-size: 20px;
+}
+
+.main img {
+    position: relative;
+    top: -80px;
+    float: right;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 100px;
+}
+
+@media (max-width: 1150px) {
+    .main-content {
+        margin: 40px 40px 0 100px;
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+    }
+
+    .main-content h3 {
+        font-size: 30px;
+    }
+
+    .main-content h4,
+    .main-content p {
+        font-size: 20px;
+    }
+
+    .main img {
+        position: relative;
+        float: right;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 300px;
+        margin-right: 100px;
+    }
+
+
+    label #btn {
+        display: block;
+    }
+
+    .nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-right: 0;
+        right: -100%;
+        top: 80px;
+        background-color: rgba(134, 154, 214, 0.8);
+        text-align: center;
+        transition: .5s;
+    }
+
+    .nav ul li {
+        display: block;
+        line-height: 10px;
+        margin: 30px 140px;
+        padding: 15px 20px;
+    }
+
+    .nav ul li:hover {
+        border-radius: 100px;
+        background: rgba(114, 139, 214, 0.8);
+        transition: 0.3s ease-in-out;
+    }
+
+    #check:checked~.nav-ul {
+        right: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #close {
+        display: block;
+    }
+}
+
+@media (max-width: 935px) {
+    .main-content {
+        margin: 40px 40px 0 100px;
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+    }
+
+    .main-content h3 {
+        font-size: 30px;
+    }
+
+    .main-content h4,
+    .main-content p {
+        font-size: 20px;
+    }
+
+    .main img {
+        position: relative;
+        top: -10px;
+        float: right;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 350px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 548px) {
+    .main-content {
+        margin: 0 40px 0 40px;
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+    }
+
+    .main-content h3 {
+        font-size: 20px;
+    }
+
+    .main-content h4,
+    .main-content p {
+        font-size: 20px;
+    }
+
+    .main-content h1,
+    .main-content h3,
+    .main-content h4,
+    .main-content p {
+        position: relative;
+        top: 40vh;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        text-align: center;
+    }
+
+    .main img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(4px);
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .action {
+        visibility: visible;
+        position: fixed;
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
+
+    .action span {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        font-size: 2em;
+        transition: 0.3s ease-in-out;
+    }
+
+    .action.active span {
+        transform: rotate(135deg);
+    }
+
+    .action ul {
+        position: absolute;
+        right: 5px;
+        bottom: 55px;
+        background: white;
+        min-width: 255px;
+        padding: 20px;
+        border-radius: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .action.active ul {
+        bottom: 65px;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+    }
+
+    .action ul li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+        opacity: 0.6;
+    }
+
+    .action ul li a {
+        text-decoration: none;
+    }
+
+    .action ul li:hover {
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    .action ul li i {
+        margin-right: 10px;
+        opacity: 0.2;
+        transform: scale(0.8);
+        transition: 0.3s ease-in-out;
+    }
+
+    .action ul li:hover i {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 356px) {
+    .wrapper {
+        display: none;
+    }
+
+    .action {
+        visibility: visible;
+        position: fixed;
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+        cursor: pointer;
+    }
+
+    .action span {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        font-size: 2em;
+        transition: 0.3s ease-in-out;
+    }
+
+    .action.active span {
+        transform: rotate(135deg);
+    }
+
+    .action ul {
+        position: absolute;
+        right: 5px;
+        bottom: 55px;
+        background: white;
+        min-width: 190px;
+        padding: 20px;
+        border-radius: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+
+    .action.active ul {
+        bottom: 65px;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.3s;
+    }
+
+    .action ul li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0;
+        opacity: 0.6;
+    }
+
+    .action ul li a {
+        text-decoration: none;
+    }
+
+    .action ul li:hover {
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    .action ul li i {
+        margin-right: 10px;
+        opacity: 0.2;
+        transform: scale(0.8);
+        transition: 0.3s ease-in-out;
+    }
+
+    .action ul li:hover i {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIP</title>
+    <link rel="icon" type="image/png" href="https://smartcity.pekalongankab.go.id/bpkd/sirip/sirip_2021/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars-staggered" id="btn"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
+            <div class="logo">
+                <a href="">SIRIP</a>
+            </div>
+            <ul class="nav-ul">
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2018</a></li>
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2019</a></li>
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2020</a></li>
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2020_TEST_CI</a></li>
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2021</a></li>
+                <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2022</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="action" onclick="actionToogle();">
+        <span>+</span>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2018</a></li>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2019</a></li>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2020</a></li>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2020_TEST_CI</a></li>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2021</a></li>
+            <li><a href=""><i class="fa-solid fa-fingerprint"></i>SIRIP 2022</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="main-content">
+            <img src="logo.png" alt="">
+            <h1 class="main-title">SIRIP</h1>
+            <h3>Sistem Informsi Rekonsilasi Instansi Pemerintah</h3>
+            <h4>Badan Pengelolaan Keuangan Daerah</h4>
+            <p>Kabupaten Pekalongan</p>
+
+        </div>
+    </div>
+
+    <script>
+        function actionToogle() {
+            var action = document.querySelector('.action');
+            action.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
